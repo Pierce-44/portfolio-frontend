@@ -1,12 +1,19 @@
+import AboutMePage from "@/components/aboutMePage";
+import BottomBannerClientWrapper from "@/components/bottomBannerClientWrapper";
 import CoverPage from "@/components/coverPage";
-import Header from "@/components/header";
+import HeaderClientWrapper from "@/components/headerClientWrapper";
+import MySkillsPage from "@/components/mySkillsPage";
+import ProjectsPage from "@/components/projectsPage";
 
 export default function Home() {
   return (
-    <main className="h-full w-full bg-white text-[#252525]">
-      <Header />
+    <main className="h-full w-full text-[#252525] ">
+      <HeaderClientWrapper />
       <CoverPage />
-      <div className="h-screen"></div>
+      <AboutMePage />
+      <MySkillsPage />
+      <ProjectsPage />
+      <BottomBannerClientWrapper />
     </main>
   );
 }
