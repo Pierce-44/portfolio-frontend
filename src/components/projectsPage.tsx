@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ProjectsPage() {
   return (
     <div className="h-full flex flex-col justify-evenly items-center">
@@ -6,38 +8,46 @@ export default function ProjectsPage() {
         <p className="text-center text-5xl font-bold">Projects</p>
       </div>
       <div className="mb-48 flex items-center justify-evenly w-full">
-        <div className="border-2 border-[#ffe8b3] p-4 rounded-xl space-y-4">
-          <div className="w-[400px] h-[300px]"></div>
+        <div className="border-2 border-[#ffd167] p-4 rounded-xl space-y-4">
+          <div className="w-[550px] h-[300px]"></div>
           <p className="text-center text-3xl font-bold">Project One</p>
           <div className="font-semibold text-[#424242] flex items-center justify-center gap-10">
-            <button className="bg-[#ffd167] w-32 text-white rounded-full border-4 border-[#ffd167] p-4 hover:bg-[#e6b952] transition-all duration-300">
+            <button className="bg-[#ffd167] w-32  rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300">
               Github
             </button>
-            <button className="border-4 w-32 border-[#ffd167] rounded-full p-4 hover:bg-[#e6b952] transition-all duration-300">
+            <button className="border-4 w-32 border-[#ffd167] rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300">
               Live App
             </button>
           </div>
         </div>
-        <div className="border-2 border-[#ffe8b3] p-4 rounded-xl space-y-4">
-          <div className="w-[400px] h-[300px]"></div>
-          <p className="text-center text-3xl font-bold">Project One</p>
+        <div className="border-2 border-[#ffd167] p-4 rounded-xl space-y-4">
+          <p className="text-center text-3xl font-bold">Instagram Clone</p>
+          <div className="w-[550px] h-[300px] flex items-center justify-center">
+            <Image
+              className="shadow-[#7e7e7e] shadow rounded-md"
+              alt="profile picture"
+              width={500}
+              height={350}
+              src="/instagram.gif"
+            />
+          </div>
           <div className="font-semibold text-[#424242] flex items-center justify-center gap-10">
-            <button className="bg-[#ffd167] w-32 text-white rounded-full border-4 border-[#ffd167] p-4 hover:bg-[#e6b952] transition-all duration-300">
+            <button className="bg-[#ffd167] w-32  rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300">
               Github
             </button>
-            <button className="border-4 w-32 border-[#ffd167] rounded-full p-4 hover:bg-[#e6b952] transition-all duration-300">
+            <button className="border-4 w-32 border-[#ffd167] rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300">
               Live App
             </button>
           </div>
         </div>
-        <div className="border-2 border-[#ffe8b3] p-4 rounded-xl space-y-4">
-          <div className="w-[400px] h-[300px]"></div>
+        <div className="border-2 border-[#ffd167] p-4 rounded-xl space-y-4">
+          <div className="w-[550px] h-[300px]"></div>
           <p className="text-center text-3xl font-bold">Project One</p>
           <div className="font-semibold text-[#424242] flex items-center justify-center gap-10">
-            <button className="bg-[#ffd167] w-32 text-white rounded-full border-4 border-[#ffd167] p-4 hover:bg-[#e6b952] transition-all duration-300">
+            <button className="bg-[#ffd167] w-32  rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300">
               Github
             </button>
-            <button className="border-4 w-32 border-[#ffd167] rounded-full p-4 hover:bg-[#e6b952] transition-all duration-300">
+            <button className="border-4 w-32 border-[#ffd167] rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300">
               Live App
             </button>
           </div>
