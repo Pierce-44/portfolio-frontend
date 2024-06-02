@@ -1,5 +1,6 @@
 import AboutMePage from "@/components/aboutMePage";
 import BottomBannerClientWrapper from "@/components/bottomBannerClientWrapper";
+import ContactPage from "@/components/contactPage";
 import CoverPage from "@/components/coverPage";
 import HeaderClientWrapper from "@/components/headerClientWrapper";
 import MySkillsPage from "@/components/mySkillsPage";
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutMePage />
       <MySkillsPage />
       <ProjectsPage />
+      <ContactPage />
       <BottomBannerClientWrapper />
     </main>
   );

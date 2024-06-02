@@ -9,6 +9,7 @@ export default function BottomBannerClientWrapper() {
     { color1: "#ffd5d5", color2: "#ff9c9c", color3: "#ff8080" },
     { color1: "#ccffb3", color2: "#a2e089", color3: "#78c261" },
     { color1: "#ffe8b3", color2: "#ffda83", color3: "#ffd167" },
+    { color1: "#666666", color2: "#494949", color3: "#383838" },
   ];
 
   const [currentColors, setCurrentColors] = React.useState(colorSchemes[0]);
@@ -33,9 +34,7 @@ export default function BottomBannerClientWrapper() {
   }, []);
 
   return (
-    <div
-    // className="bg-[#ffd167]"
-    >
+    <div className="bg-[#979797]">
       <BottomBannerServer currentColors={currentColors} />
     </div>
   );

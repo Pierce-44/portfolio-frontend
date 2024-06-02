@@ -13,7 +13,7 @@ export default function HeaderServer({ isScrolled }: Props) {
     >
       <div className=" w-full flex items-center justify-evenly text-3xl">
         <div className="flex gap-10">
-          <button className="hover:border-[#98bfff] border-b-2 pb-1 border-white transition-all duration-500">
+          <button className="hover:border-[#98bfff] border-b-2 pb-1 border-[#00000000] transition-all duration-500">
             Pierce Hahn
           </button>
           <div className="flex items-center justify-center gap-4">
@@ -46,16 +46,16 @@ export default function HeaderServer({ isScrolled }: Props) {
           </div>
         </div>
         <div className="flex gap-16">
-          <button className="hover:border-[#ff9c9c] border-b-2 pb-1 border-white transition-all duration-500">
+          <button className="hover:border-[#ff9c9c] border-b-2 pb-1 border-[#00000000] transition-all duration-500">
             About
           </button>
-          <button className="hover:border-[#a2e089] border-b-2 pb-1 border-white transition-all duration-500">
+          <button className="hover:border-[#a2e089] border-b-2 pb-1 border-[#00000000] transition-all duration-500">
             Skills
           </button>
-          <button className="hover:border-[#ffda83] border-b-2 pb-1 border-white transition-all duration-500">
+          <button className="hover:border-[#ffda83] border-b-2 pb-1 border-[#00000000] transition-all duration-500">
             Projects
           </button>
-          <button className="hover:border-[#ffc982] border-b-2 pb-1 border-white transition-all duration-500">
+          <button className="hover:border-[#494949] border-b-2 pb-1 border-[#00000000] transition-all duration-500">
             Contact
           </button>
         </div>
