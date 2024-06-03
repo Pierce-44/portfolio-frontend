@@ -17,13 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full w-full">
-      <Head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-        />
-      </Head>
       <body className={`${inter.className} h-full w-full`}>{children}</body>
     </html>
   );

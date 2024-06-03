@@ -1,9 +1,6 @@
-"use client";
-
 import React from "react";
-import BottomBannerServer from "./bottomBannerServer";
 
-export default function BottomBannerClientWrapper() {
+export default function useBottomBannerColours() {
   const colorSchemes = [
     { color1: "#c5e0fd", color2: "#98bfff", color3: "#8299ff" },
     { color1: "#ffd5d5", color2: "#ff9c9c", color3: "#ff8080" },
@@ -33,9 +30,7 @@ export default function BottomBannerClientWrapper() {
     };
   }, []);
 
-  return (
-    <div className="bg-[#979797]">
-      <BottomBannerServer currentColors={currentColors} />
-    </div>
-  );
+  return {
+    currentColors,
+  };
 }

@@ -1,10 +1,7 @@
-"use client";
 import React from "react";
-import HeaderServer from "./headerServer";
 
-export default function HeaderClientWrapper() {
+export default function useScrolled() {
   const [isScrolled, setIsScrolled] = React.useState(false);
-  const stickyRef = React.useRef(null);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -21,9 +18,5 @@ export default function HeaderClientWrapper() {
     };
   }, []);
 
-  return (
-    <div ref={stickyRef}>
-      <HeaderServer isScrolled={isScrolled} />
-    </div>
-  );
+  return { isScrolled };
 }

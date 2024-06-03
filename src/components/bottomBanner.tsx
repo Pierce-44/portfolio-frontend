@@ -1,14 +1,12 @@
-interface Props {
-  currentColors: {
-    color1: string;
-    color2: string;
-    color3: string;
-  };
-}
+"use client";
+import useBottomBannerColours from "@/hooks/useBottomBannerColours";
+import React from "react";
 
-export default function BottomBannerServer({ currentColors }: Props) {
+export default function BottomBanner() {
+  const { currentColors } = useBottomBannerColours();
+
   return (
-    <div className="w-full fixed bottom-0 left-0 -z-10">
+    <div className="w-full overflow-hidden fixed bottom-0 left-0 -z-10">
       <svg
         id="visual"
         viewBox="0 0 960 540"
