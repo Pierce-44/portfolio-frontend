@@ -27,7 +27,7 @@ export default function Header({
         scrolled.isScrolled ? "h-16 shadow-lg" : "pt-16"
       } transition-all duration-700 flex justify-center z-10 bg-white max-w-[100vw]`}
     >
-      <div className=" w-full flex items-center justify-evenly text-3xl max-lg:text-xl max-md:text-base max-md:justify-between max-md:px-1">
+      <div className=" w-full flex items-center justify-evenly text-3xl max-lg:text-xl max-md:text-base max-md:justify-between max-md:px-10 max-[500px]:px-2">
         <div className="flex gap-10 max-lg:gap-0">
           <button
             onClick={() => {

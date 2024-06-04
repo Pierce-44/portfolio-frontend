@@ -18,7 +18,7 @@ export default function AboutMePage({ aboutMeRef }: Props) {
           About Me
         </p>
       </div>
-      <div className="flex items-center justify-evenly w-full mb-48">
+      <div className="flex items-center justify-evenly w-full mb-48 max-md:mb-0">
         <div className="relative h-[350px] w-[350px] max-xl:h-[200px] max-xl:w-[200px] shrink-0 max-md:hidden mr-4">
           <Image
             fill

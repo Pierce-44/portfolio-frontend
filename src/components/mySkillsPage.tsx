@@ -12,7 +12,7 @@ export default function MySkillsPage({ mySkillsRef }: Props) {
         <p className="text-center font-semibold text-lg">Explore My</p>
         <p className="text-center text-5xl font-bold max-sm:text-3xl">Skills</p>
       </div>
-      <div className="flex gap-5 max-w-[600px] flex-wrap mb-40 items-center justify-center max-md:px-4">
+      <div className="flex gap-5 max-w-[600px] flex-wrap mb-40 max-md:mb-10 items-center justify-center max-md:px-4">
         <div className="bg-[#ccffb3] p-5 rounded-full max-md:p-3 flex items-center justify-center">
           <svg
             className="h-16 w-16 max-md:w-10 max-md:h-10"
