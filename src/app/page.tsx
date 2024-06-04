@@ -7,6 +7,7 @@ import CoverPage from "@/components/coverPage";
 import Header from "@/components/header";
 import MySkillsPage from "@/components/mySkillsPage";
 import ProjectsPage from "@/components/projectsPage";
+import Head from "next/head";
 import React from "react";
 
 export default function Home() {
