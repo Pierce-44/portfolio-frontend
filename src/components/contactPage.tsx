@@ -16,7 +16,7 @@ export default function ContactPage({ contactRef, coverPageRef }: Props) {
         <p className="text-center text-5xl font-bold max-sm:text-3xl">
           Contact Me
         </p>
-        <div className="!my-24 font-semibold text-lg flex items-center justify-center gap-24 max-md:gap-4 max-md:flex-wrap border border-[#383838] rounded-full p-10 max-md:p-5 max-w-min">
+        <div className="!my-24 font-semibold text-lg flex items-center justify-center gap-24 max-md:gap-4 max-md:flex-wrap border border-[#383838] rounded-full p-10 max-md:p-5 mx-10">
           <Link
             href="mailto:piercehahn.coding@gmail.com<"
             className="flex items-center justify-center gap-3"
