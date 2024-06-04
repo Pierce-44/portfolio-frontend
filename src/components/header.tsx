@@ -27,7 +27,7 @@ export default function Header({
         scrolled.isScrolled ? "h-16 shadow-lg" : "pt-16"
       } transition-all duration-700 flex justify-center z-10 bg-white max-w-[100vw]`}
     >
-      <div className=" w-full flex items-center justify-evenly text-3xl max-lg:text-xl max-md:text-base max-md:justify-between max-md:px-10 max-[500px]:px-2">
+      <div className=" w-full flex items-center justify-evenly text-3xl max-lg:text-xl max-md:text-base max-md:justify-between max-md:px-10 max-[500px]:px-2 ">
         <div className="flex gap-10 max-lg:gap-0">
           <button
             onClick={() => {
@@ -71,7 +71,7 @@ export default function Header({
             </Link>
           </div>
         </div>
-        <div className="flex gap-16 max-lg:gap-10  max-md:gap-7 max-sm:gap-3">
+        <div className="flex gap-16 max-lg:gap-10  max-md:gap-7 max-sm:gap-3 max-sm:text-sm">
           <button
             onClick={() => {
               if (aboutMeRef.current) {

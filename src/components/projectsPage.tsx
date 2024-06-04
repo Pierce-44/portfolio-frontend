@@ -14,7 +14,9 @@ export default function ProjectsPage({ projectsRef }: Props) {
   return (
     <div ref={projectsRef} className="h-full pt-20">
       <div className="space-y-4 mb-10">
-        <p className="text-center font-semibold text-lg">Explore My</p>
+        <p className="text-center font-semibold text-lg max-sm:hidden">
+          Explore My
+        </p>
         <p className="text-center text-5xl font-bold max-sm:text-3xl">
           Projects
         </p>

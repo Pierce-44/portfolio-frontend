@@ -9,8 +9,12 @@ export default function MySkillsPage({ mySkillsRef }: Props) {
       className="h-full flex flex-col justify-evenly items-center overflow-hidden "
     >
       <div className="space-y-4">
-        <p className="text-center font-semibold text-lg">Explore My</p>
-        <p className="text-center text-5xl font-bold max-sm:text-3xl">Skills</p>
+        <p className="text-center font-semibold text-lg max-sm:hidden">
+          Explore My
+        </p>
+        <p className="text-center text-5xl font-bold max-sm:text-3xl ">
+          Skills
+        </p>
       </div>
       <div className="flex gap-5 max-w-[600px] flex-wrap mb-40 max-md:mb-10 items-center justify-center max-md:px-4">
         <div className="bg-[#ccffb3] p-5 rounded-full max-md:p-3 flex items-center justify-center">
