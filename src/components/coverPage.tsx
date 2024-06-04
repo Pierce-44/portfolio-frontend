@@ -2,12 +2,14 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   coverPageRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
 }
 
-export default function CoverPage({ coverPageRef }: Props) {
+export default function CoverPage({ coverPageRef, contactRef }: Props) {
   return (
     <div ref={coverPageRef} className=" h-full flex overflow-hidden ">
       <div className="flex items-center justify-evenly w-full mb-20 max-md:flex-col-reverse max-md:justify-center max-md:gap-10">
@@ -16,10 +18,21 @@ export default function CoverPage({ coverPageRef }: Props) {
           <p className="font-extrabold text-7xl max-sm:text-4xl">Pierce Hahn</p>
           <p className="font-bold text-2xl">Full-Stack Web Developer</p>
           <div className="font-semibold space-x-4 text-[#424242]">
-            <button className="bg-[#6ca5ff] text-white rounded-full border-4 border-[#6ca5ff] p-4 hover:bg-[#354a6d] transition-all duration-300 max-sm:p-2">
+            <Link
+              href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CV_PH_V2.pdf?alt=media&token=2315af66-1c88-4d32-bf4c-00b3119cf114"
+              target="_blank"
+              className="bg-[#6ca5ff] text-white rounded-full border-4 border-[#6ca5ff] p-4 hover:bg-[#354a6d] transition-all duration-300 max-sm:p-2"
+            >
               Download CV
-            </button>
-            <button className="border-4 border-[#c5e0fd] rounded-full p-4 hover:bg-[#bad3ff] transition-all duration-300 max-sm:p-2">
+            </Link>
+            <button
+              onClick={() => {
+                if (contactRef.current) {
+                  contactRef.current.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="border-4 border-[#c5e0fd] rounded-full p-4 hover:bg-[#bad3ff] transition-all duration-300 max-sm:p-2"
+            >
               Contact Info
             </button>
           </div>

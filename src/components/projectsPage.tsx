@@ -4,6 +4,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 interface Props {
   projectsRef: React.RefObject<HTMLDivElement>;
@@ -41,9 +42,13 @@ export default function ProjectsPage({ projectsRef }: Props) {
             </div>
             <div className="font-semibold text-[#424242] flex items-center justify-center gap-10 pt-10">
               <p>*Private Repo*</p>
-              <button className="border-4 w-32 border-[#ffd167] rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300">
+              <Link
+                href="https://eedition.bnd.com/shortcode/LMCBLV"
+                target="_blank"
+                className="border-4 w-32 border-[#ffd167] text-center rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
+              >
                 Live App
-              </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -62,13 +67,21 @@ export default function ProjectsPage({ projectsRef }: Props) {
                 unoptimized
               />
             </div>
-            <div className="font-semibold text-[#424242] flex items-center justify-center gap-10">
-              <button className="bg-[#ffd167] w-32  rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300">
+            <div className="font-semibold text-[#424242] flex items-center justify-center gap-10 pt-10">
+              <Link
+                href="https://github.com/Pierce-44/instagram-clone"
+                target="_blank"
+                className="bg-[#ffd167] w-32 text-center rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300"
+              >
                 Github
-              </button>
-              <button className="border-4 w-32 border-[#ffd167] rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300">
+              </Link>
+              <Link
+                href="https://instagram-clone-mu-two.vercel.app/"
+                target="_blank"
+                className="border-4 w-32 border-[#ffd167] text-center rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
+              >
                 Live App
-              </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -87,13 +100,21 @@ export default function ProjectsPage({ projectsRef }: Props) {
                 unoptimized
               />
             </div>
-            <div className="font-semibold text-[#424242] flex items-center justify-center gap-10">
-              <button className="bg-[#ffd167] w-32  rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300">
+            <div className="font-semibold text-[#424242] flex items-center justify-center gap-10 pt-10">
+              <Link
+                href="https://github.com/Pierce-44/netflix-clone"
+                target="_blank"
+                className="bg-[#ffd167] w-32 text-center rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300"
+              >
                 Github
-              </button>
-              <button className="border-4 w-32 border-[#ffd167] rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300">
+              </Link>
+              <Link
+                href="https://project-net.vercel.app/"
+                target="_blank"
+                className="border-4 w-32 text-center border-[#ffd167] rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
+              >
                 Live App
-              </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>

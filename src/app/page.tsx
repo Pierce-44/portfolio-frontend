@@ -25,11 +25,11 @@ export default function Home() {
         projectsRef={projectsRef}
         contactRef={contactRef}
       />
-      <CoverPage coverPageRef={coverPageRef} />
+      <CoverPage coverPageRef={coverPageRef} contactRef={contactRef} />
       <AboutMePage aboutMeRef={aboutMeRef} />
       <MySkillsPage mySkillsRef={mySkillsRef} />
       <ProjectsPage projectsRef={projectsRef} />
-      <ContactPage contactRef={contactRef} />
+      <ContactPage contactRef={contactRef} coverPageRef={coverPageRef} />
       <BottomBanner />
     </main>
   );
