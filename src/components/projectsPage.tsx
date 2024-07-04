@@ -38,7 +38,7 @@ export default function ProjectsPage({ projectsRef }: Props) {
                 autoPlay
                 loop
                 muted
-                src="/demo-f1-fast-facts.webm"
+                src="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/demo-f1-fast-facts.webm?alt=media&token=09e48878-9b58-46b6-875e-0ad9d60c3b28"
               ></video>
             </div>
             <div className="font-semibold text-[#424242] flex items-center justify-center gap-10 pt-10">
@@ -70,7 +70,7 @@ export default function ProjectsPage({ projectsRef }: Props) {
                 alt="profile picture"
                 layout="fill"
                 objectFit="contain"
-                src="/eEdition.gif"
+                src="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/eEdition.gif?alt=media&token=764ba91e-e611-4e0c-ba79-83c686be3748"
                 unoptimized
               />
             </div>
@@ -99,7 +99,7 @@ export default function ProjectsPage({ projectsRef }: Props) {
                 alt="profile picture"
                 layout="fill"
                 objectFit="contain"
-                src="/instagram.gif"
+                src="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/instagram.gif?alt=media&token=00f33d32-9ad0-41bf-a70d-a826b1a5818b"
                 unoptimized
               />
             </div>
@@ -132,7 +132,7 @@ export default function ProjectsPage({ projectsRef }: Props) {
                 alt="profile picture"
                 layout="fill"
                 objectFit="contain"
-                src="/netflix.gif"
+                src="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/netflix.gif?alt=media&token=79e663b7-1c05-4e36-83f9-31f29f1fa3d3"
                 unoptimized
               />
             </div>
