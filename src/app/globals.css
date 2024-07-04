@@ -58,3 +58,7 @@
     display: none !important;
   }
 }
+
+.dark .swiper-pagination-bullet {
+  background-color: rgb(255, 255, 255);
+}

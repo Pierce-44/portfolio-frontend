@@ -14,10 +14,10 @@ export default function ProjectsPage({ projectsRef }: Props) {
   return (
     <div ref={projectsRef} className="h-full pt-20">
       <div className="space-y-4 mb-10">
-        <p className="text-center font-semibold text-lg max-sm:hidden">
+        <p className="text-center font-semibold text-lg max-sm:hidden text-gray-500 dark:text-gray-400">
           Explore My
         </p>
-        <p className="text-center text-5xl font-bold max-sm:text-3xl">
+        <p className="text-center text-5xl font-bold max-sm:text-3xl dark:text-white">
           Projects
         </p>
       </div>
@@ -27,6 +27,38 @@ export default function ProjectsPage({ projectsRef }: Props) {
         navigation
         slidesPerView={1}
       >
+        <SwiperSlide className="">
+          <div className="pb-20 flex flex-col justify-center items-center">
+            <p className="text-center text-3xl font-bold pb-4 max-sm:text-lg dark:text-white">
+              F1 Fast Facts - Website
+            </p>
+            <div className="relative  w-[80vw] h-[35vh] max-w-[800px] flex items-center justify-center">
+              <video
+                className=" w-[80vw] h-[35vh]"
+                autoPlay
+                loop
+                muted
+                src="/demo-f1-fast-facts.webm"
+              ></video>
+            </div>
+            <div className="font-semibold text-[#424242] flex items-center justify-center gap-10 pt-10">
+              <Link
+                href="https://github.com/Pierce-44/f1-fast-facts"
+                target="_blank"
+                className="bg-[#ffd167] w-32 text-center rounded-full border-2 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300"
+              >
+                Github
+              </Link>
+              <Link
+                href="https://f1-fast-facts.vercel.app"
+                target="_blank"
+                className="border-2 w-32 border-[#ffd167] dark:text-gray-100 dark:hover:text-gray-800 text-center rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
+              >
+                Live App
+              </Link>
+            </div>
+          </div>
+        </SwiperSlide>
         <SwiperSlide className="">
           <div className="pb-20 flex flex-col justify-center items-center">
             <p className="text-center text-3xl font-bold pb-4 max-sm:text-lg">
@@ -43,11 +75,13 @@ export default function ProjectsPage({ projectsRef }: Props) {
               />
             </div>
             <div className="font-semibold text-[#424242] flex items-center justify-center gap-10 pt-10">
-              <p>*Private Repo*</p>
+              <p className="dark:text-gray-100 dark:hover:text-gray-800 ">
+                *Private Repo*
+              </p>
               <Link
                 href="https://eedition.bnd.com/shortcode/LMCBLV"
                 target="_blank"
-                className="border-4 w-32 border-[#ffd167] text-center rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
+                className="border-2 w-32 border-[#ffd167] dark:text-gray-100 dark:hover:text-gray-800 text-center rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
               >
                 Live App
               </Link>
@@ -73,14 +107,14 @@ export default function ProjectsPage({ projectsRef }: Props) {
               <Link
                 href="https://github.com/Pierce-44/instagram-clone"
                 target="_blank"
-                className="bg-[#ffd167] w-32 text-center rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300"
+                className="bg-[#ffd167] w-32 text-center rounded-full border-2 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300"
               >
                 Github
               </Link>
               <Link
                 href="https://instagram-clone-mu-two.vercel.app/"
                 target="_blank"
-                className="border-4 w-32 border-[#ffd167] text-center rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
+                className="border-2 w-32 border-[#ffd167] dark:text-gray-100 dark:hover:text-gray-800 text-center rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
               >
                 Live App
               </Link>
@@ -106,14 +140,14 @@ export default function ProjectsPage({ projectsRef }: Props) {
               <Link
                 href="https://github.com/Pierce-44/netflix-clone"
                 target="_blank"
-                className="bg-[#ffd167] w-32 text-center rounded-full border-4 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300"
+                className="bg-[#ffd167] w-32 text-center rounded-full border-2 border-[#ffd167] hover:border-[#ffd981] px-4 py-2 hover:bg-[#ffe19c] transition-all duration-300"
               >
                 Github
               </Link>
               <Link
                 href="https://project-net.vercel.app/"
                 target="_blank"
-                className="border-4 w-32 text-center border-[#ffd167] rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
+                className="border-2 w-32 text-center border-[#ffd167] dark:text-gray-100 dark:hover:text-gray-800  rounded-full px-4 py-2 hover:bg-[#ffd167] transition-all duration-300"
               >
                 Live App
               </Link>

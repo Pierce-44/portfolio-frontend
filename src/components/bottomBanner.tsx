@@ -6,7 +6,7 @@ export default function BottomBanner() {
   const { currentColors } = useBottomBannerColours();
 
   return (
-    <div className="w-full overflow-hidden fixed bottom-0 left-0 -z-10">
+    <div className="w-full h-screen overflow-hidden fixed bottom-0 left-0 -z-10 dark:bg-gray-800 transition-colors duration-500">
       <svg
         id="visual"
         viewBox="0 0 960 540"
@@ -15,7 +15,7 @@ export default function BottomBanner() {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version="1.1"
-        className="w-full h-auto"
+        className="w-full h-auto fixed bottom-0 left-0"
       >
         <path
           d="M0 498L48 470L96 494L144 463L192 484L240 485L288 488L336 458L384 458L432 468L480 479L528 478L576 456L624 500L672 484L720 494L768 486L816 467L864 461L912 456L960 459L960 541L912 541L864 541L816 541L768 541L720 541L672 541L624 541L576 541L528 541L480 541L432 541L384 541L336 541L288 541L240 541L192 541L144 541L96 541L48 541L0 541Z"

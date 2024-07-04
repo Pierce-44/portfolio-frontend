@@ -17,14 +17,29 @@ export default function Home() {
   const projectsRef = React.useRef<HTMLDivElement>(null);
   const contactRef = React.useRef<HTMLDivElement>(null);
 
+  const [darkMode, setDarkMode] = React.useState(false);
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    setDarkMode(mediaQuery.matches);
+
+    const handleChange = () => setDarkMode(mediaQuery.matches);
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
   return (
-    <main className="h-full w-full text-[#252525] ">
+    <main className={`${darkMode ? "dark" : ""} h-full w-full text-[#252525] `}>
       <Header
         coverPageRef={coverPageRef}
         aboutMeRef={aboutMeRef}
         mySkillsRef={mySkillsRef}
         projectsRef={projectsRef}
         contactRef={contactRef}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
       />
       <CoverPage coverPageRef={coverPageRef} contactRef={contactRef} />
       <AboutMePage aboutMeRef={aboutMeRef} />
