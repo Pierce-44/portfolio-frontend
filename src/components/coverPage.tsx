@@ -23,7 +23,7 @@ export default function CoverPage({ coverPageRef, contactRef }: Props) {
           </p>
           <div className="font-semibold space-x-4 text-[#424242]">
             <Link
-              href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CV_PH_V2.pdf?alt=media&token=2315af66-1c88-4d32-bf4c-00b3119cf114"
+              href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CV_PH.pdf?alt=media&token=f7270490-99d6-4e0d-aa5e-0a0342711a25"
               target="_blank"
               className="bg-[#6ca5ff] text-white rounded-full border-4 border-[#6ca5ff] p-4 hover:bg-[#354a6d] transition-all duration-300 max-sm:p-2"
             >
